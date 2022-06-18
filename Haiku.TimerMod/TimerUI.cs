@@ -19,15 +19,15 @@ namespace Haiku.TimerMod
             timerCanvas.name = "Timer Canvas";
             timerCanvas.transform.SetParent(TimerMod.TimerGameObject.transform);
             timerText = CanvasUtil.CreateTextPanel(timerCanvas, "0:00.000", 12, TextAnchor.MiddleCenter,
-                new CanvasUtil.RectData(new Vector2(0, 0), new Vector2(-25, -100), new Vector2(0, 0), new Vector2(2, 1)), CanvasUtil.gameFont).GetComponent<Text>();
+                new CanvasUtil.RectData(new Vector2(0, 0), new Vector2(-25, -100), new Vector2(0, 0), new Vector2(2, 1)), CanvasUtil.GameFont).GetComponent<Text>();
             timerText.raycastTarget = false;
 
             PBText = CanvasUtil.CreateTextPanel(timerCanvas, "PB 0:00.000", 10, TextAnchor.MiddleCenter,
-                new CanvasUtil.RectData(new Vector2(0, 0), new Vector2(-27, -90), new Vector2(0, 0), new Vector2(2, 1)), CanvasUtil.gameFont).GetComponent<Text>();
+                new CanvasUtil.RectData(new Vector2(0, 0), new Vector2(-27, -90), new Vector2(0, 0), new Vector2(2, 1)), CanvasUtil.GameFont).GetComponent<Text>();
             PBText.raycastTarget = false;
 
             DeltaGameObject = CanvasUtil.CreateTextPanel(timerCanvas, "0:00.000", 8, TextAnchor.MiddleCenter,
-                new CanvasUtil.RectData(new Vector2(0,0), new Vector2(-22, -80), new Vector2(0, 0), new Vector2(2, 1)), CanvasUtil.gameFont);
+                new CanvasUtil.RectData(new Vector2(0,0), new Vector2(-22, -80), new Vector2(0, 0), new Vector2(2, 1)), CanvasUtil.GameFont);
             DeltaText = DeltaGameObject.GetComponent<Text>();
             DeltaText.raycastTarget = false;
             DeltaGameObject.SetActive(false);

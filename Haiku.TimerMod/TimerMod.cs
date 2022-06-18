@@ -9,8 +9,8 @@ using System.Reflection;
 
 namespace Haiku.TimerMod
 {
-    [BepInPlugin("haiku.timermod", "Timer Mod", "1.0.0.0")]
-    [BepInDependency("haiku.mapi", "1.0.0.1")]
+    [BepInPlugin("haiku.timermod", "Timer Mod", "1.0.1.0")]
+    [BepInDependency("haiku.mapi", "1.0.1.0")]
     public sealed class TimerMod : BaseUnityPlugin
     {
         public static GameObject TimerGameObject;
